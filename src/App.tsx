@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Hello } from './Hello';
 import './App.css';
 import { ToolbarButton, ToolbarButtonClass, Toolbar } from './ToolbarButton';
+import { JsComponent } from './JsButton';
 
 function Inner(props: any) {
   return <button onClick={e => props.onInnerClicked() }>{props.someValue}</button>
@@ -20,6 +21,7 @@ function App() {
           <ToolbarButtonClass text="class" />
         </Toolbar>
 
+        <JsComponent text="js" icon="js" />
         <Outer/>
       </header>
     </div>
