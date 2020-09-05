@@ -7,3 +7,10 @@ export function JsComponent(props) {
 	console.log(React.createElement('div', null, iconDiv, textDiv))
 	return React.createElement('div', null, iconDiv, textDiv)
 }
+
+export function JsxComponent(props) {
+	return <div>
+		<div><img src={props.icon} /></div>
+		<div>{props.text}</div>
+	</div>
+}
